@@ -1,0 +1,112 @@
+main{
+    max-width: 425px;
+    width: 100%;
+}
+.usuarioPerfil{
+    max-width: 385px;
+    width: 100%;
+    /* height: 52px; */
+    margin-left: 20px;
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 40px;
+
+}
+.imgPhotos{
+    width: 52px;
+    height: 52px;
+    margin-right: 12px;
+ 
+}
+.sectionNewPost{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 385px;
+    height: 264px;
+    margin-bottom: 40px;
+}
+.buttonPostar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 10px;
+    width: 69px;
+    height: 38px;
+    background: #DEE2E6;
+    border: 2px solid #DEE2E6;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sectionOldPost{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 385px;
+    height: 1984px;
+    margin-left: 20px;
+}
+.PostsTitulo{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: #212529;
+    margin-left: 20px;
+    
+   
+}
+.liSugestaoSeguidor{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 178px;
+    margin-right: 61px;
+}
+.ulSugestoes{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    max-width: 738px;
+    width: 100%;
+    height: 100px;
+    
+    overflow: scroll;
+    
+    overflow-y: hidden;
+
+}
+.botaoSeguir{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 10px;
+    width: 89px;
+    height: 28px;
+    background: #4263EB;
+    border: 1px solid #4263EB;
+    border-radius: 2px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    cursor: pointer;
+    }

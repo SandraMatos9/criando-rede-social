@@ -1,0 +1,125 @@
+.digitarTituloPost{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 16px 20px;
+   width: 375px;
+   height: 52px;
+   background: #FFFFFF;
+   border: 2px solid #DEE2E6;
+   border-radius: 4px;
+   margin-bottom: 22px;
+}
+.digitarDescricaoPost{
+   width: 375px;
+   height: 130px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 28px 21px 29px;
+   gap: 10px;
+   left: 0%;
+   right: 0%;
+   top: 0%;
+   bottom: 0%;
+   background: #FFFFFF;
+   border: 2px solid #DEE2E6;
+   border-radius: 4px;
+   margin-bottom: 22px;
+}
+input{
+   border-style: none;
+}
+.usuarioPerfilOldPost{
+   max-width: 385px;
+
+   margin-top: 20px;
+   align-items: center;
+   flex-direction: row;
+   display: flex;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-bottom: 40px;
+}
+
+.tituloOldPost{
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 40px;
+   color: #212529;
+
+   margin-right: 20px;
+   margin-bottom: 20px;
+   border-style: none;
+
+}
+.descricaoOldPost{
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 28px;
+   color: #495057;
+  
+   margin-right: 20px;
+   margin-bottom: 32px;
+   border-style: none;
+}
+
+.botaoEIcone{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    
+
+}
+.botaoOldPost{
+   
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 0px 12px;
+   gap: 10px;
+   color: #FFFFFF;
+   width: 92px;
+   height: 38px;
+   background: #212529;
+   border: 2px solid #212529;
+   border-radius: 4px;
+   cursor:pointer;
+
+   margin-right: 32px;
+
+}
+
+.nomeProfissao{
+ 
+   
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 40px;
+  
+}
+.profissao{
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #495057;
+}
+.imagemNomeProfissao{
+   max-width: 385px;
+   align-items: center;
+   flex-direction: row;
+   display: flex;
+   margin-bottom: 40px;
+ 
+}

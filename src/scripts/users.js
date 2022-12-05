@@ -41,3 +41,7 @@ const users = [
     img: "./src/assets/img/user6.svg",
   },
 ];
+
+
+
+//lembrar de colocar no arquivo index.js
