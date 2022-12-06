@@ -30,18 +30,6 @@ const users = [
     stack: "Devop's",
     img: "./src/assets/img/user5.svg",
   },
-  {
-    id: 6,
-    user: "Filipe Gutierry",
-    img: "./src/assets/img/user7.svg",
-  },
-  {
-    id: 7,
-    user: "Samuel Persuhn",
-    img: "./src/assets/img/user6.svg",
-  },
+ 
+
 ];
-
-
-
-//lembrar de colocar no arquivo index.js

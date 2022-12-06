@@ -16,8 +16,19 @@ h2{
   line-height: 24px;
   padding-top: 30px;
 }
-@media(min-width:1440px){
+.liOldPost{
+    max-width: 385px;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 40px;
 
+}
+
+ @media(min-width: 700px){
 
     .digitarTituloPost{
         display: flex;
@@ -42,16 +53,22 @@ h2{
     .sugestoesParaVoceSeguir{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: space-between
+        /* align-items: flex-start; */
         padding: 0px;
-        gap: 61px;
-        position: absolute;
-        width: 421px;
-        height: 363px;
-        left: 940px;
-        top: 134px;
+        position: sticky;
+        top: 0;
+        
+    } 
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .ulSugestoes{
+        flex-direction: column;
+        overflow: unset;
 
     }
+    
 
-}
+} 

@@ -34,10 +34,9 @@ input{
 }
 .usuarioPerfilOldPost{
    max-width: 385px;
-
    margin-top: 20px;
    align-items: center;
-   flex-direction: row;
+   flex-direction: column;
    display: flex;
    margin-left: 20px;
    margin-right: 20px;
@@ -70,13 +69,7 @@ input{
    border-style: none;
 }
 
-.botaoEIcone{
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    
 
-}
 .botaoOldPost{
    
    box-sizing: border-box;
@@ -116,10 +109,14 @@ input{
    color: #495057;
 }
 .imagemNomeProfissao{
-   max-width: 385px;
+   justify-content: space-between;
+  
+   width: 100%;
    align-items: center;
    flex-direction: row;
    display: flex;
    margin-bottom: 40px;
+   margin-left: 154px;
+   
  
 }

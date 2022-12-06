@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./src/styles/modal.css">
     <link rel="stylesheet" href="./src/styles/index.css">
     <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="stylesheet" href="./src/styles/posts.css">
     <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 
@@ -25,17 +26,18 @@
     <main>
 
 
-        <div class="usuarioPerfil">
-            <img class="imgPhotos" src="./src/assets/img/user1.svg"> 
-            <div class="nomeProfissao">
-                <h2>Samuel Leão</h2>
-                <p>Front end Engineer</p>
-            </div>
-        </div>
+       
 
 
 
         <section class="sectionNewPost">
+            <div class="usuarioPerfil">
+                <img class="imgPhotos" src="./src/assets/img/user1.svg"> 
+                <div class="nomeProfissao">
+                    <h2>Samuel Leão</h2>
+                    <p>Front end Engineer</p>
+                </div>
+            </div>
             <div class="digitarTituloPost">
                 <input type="text" placeholder="Digitar título do post">
             </div>
@@ -65,12 +67,14 @@
 
 
 
+        
+
+
         <section class="sectionOldPost">
             <span class="PostsTitulo">Posts</span>
             <ul class="usuarioPerfilOldPost">
-                <li>
-                    <!-- <div class="imagemNomeProfissao">
-
+                <!-- <li class= liOldPost>
+                    <div class="imagemNomeProfissao">
                         <img class="imgPhotos" src="./src/assets/img/user1.svg"> 
                         <div class="nomeProfissao">
                             <h2>Samuel Leão</h2>
@@ -83,14 +87,39 @@
                     <p class="descricaoOldPost">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
                     <div class="botaoEIcone">
                         <button class="botaoOldPost">Abrir Post</button>
-                         <span class="icone"><i class="fa-duotone fa-heart"></i></span> 
+                         <span class="material-symbols-outlined">
+favorite
+</span>
                     </div>
-                     -->
+                    
 
-                </li>
+                </li> -->
                
             </ul>
 
+        </section>
+
+        <section id="modalSectionPost">
+            <ul class="ulModalPost">
+                <!-- <li class= liModalPost>
+                    <div class="modalDivFotoSeparadaNomeEProfissao">
+                        <img class="modalImgPhotos" src="./src/assets/img/user1.svg"> 
+                        <div class="modalNomeProfissao">
+                            <h2>Samuel Leão</h2>
+                            <p>Front end Engineer</p>
+                        </div>
+                    </div>
+                   
+
+                    <p class="modalTituloOldPost">Como criar um interface simples e agradável utilizando boas práticas de design</p>
+                    <p class="modalDescricaoOldPost">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
+                    <div class="modalBotaoEIcone">
+            
+                    
+
+                </li> -->
+               
+            </ul>
         </section>
 
 

@@ -1,5 +1,5 @@
 header{
-    max-width: 425px;
+    
     width: 100%;
   
  }
@@ -12,6 +12,7 @@ header{
     height: 76px;
     background-color: #212529;
     flex-direction: row;
+   
  }
 
  .sair{
