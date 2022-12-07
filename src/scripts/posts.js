@@ -55,23 +55,46 @@ function gerarPosts(posts){
         pTituloOldPost.innerText=posts[i].title
 
         const pDescricaoOldPost= document.createElement('p')
+       
         pDescricaoOldPost.innerText=posts[i].text
 
         const divDoBotaoIcone= document.createElement('div')
         divDoBotaoIcone.classList.add('botaoEIcone')
 
         const botaoAbrirPost= document.createElement('button')
+        botaoAbrirPost.setAttribute("data-modal",posts[i].id_post)
         botaoAbrirPost.classList.add('botaoOldPost')
         botaoAbrirPost.innerText='Abrir Post'
+        botaoAbrirPost.addEventListener('click',()=>{
+          const clickedPost=divLi
+          modalCreatePosts(posts[i])
+         
+          
+        })
+
+
         
         const spanIcone= document.createElement('span')
         spanIcone.classList.add('material-symbols-outlined')
         spanIcone.innerText='favorite'
 
-        divLi.append(divImagemNomeJob,divImgId,divNomeJob,divh2,pJob,pTituloOldPost,pDescricaoOldPost,divDoBotaoIcone,
-          botaoAbrirPost,spanIcone)
+        
+        divNomeJob.append(divh2,pJob)
+        divImagemNomeJob.append(divImgId,divNomeJob)
+
+        const divContemBotaoIcone= document.createElement('div')
+        divContemBotaoIcone.append(botaoAbrirPost,spanIcone)
+        divContemBotaoIcone.classList='divContemBotaoIcone'
+        
+
+        
+
+        divLi.append(divImagemNomeJob,pTituloOldPost,pDescricaoOldPost,divDoBotaoIcone,
+          divContemBotaoIcone)
+
+        
       
-        querySelectorDoElementoQueVouColocar.appendChild(divLi)
+        querySelectorDoElementoQueVouColocar.appendChild( divLi)
 
       }
     }
@@ -86,67 +109,3 @@ gerarPosts(posts)
 
 
 
-
-
-  const modal= document.querySelector('botaoOldPost')
-  const botao= document.querySelector('botaoOldPost')
-  for(let i=0;i<button.length;i++){
-    const button= button[i]
-
-  }
-  button.addEventListener('click',()=>{
-    const modalContent= createModal(button)
-  })
-
-
-  const modalQuerySelectorDoElementoQueVouColocar= document.querySelector(".ulModalPost")
-  
-  function modalCreatePosts(){
-    for(let i=0; i<posts.length;i++){
-      for(let j=0; j<users.length;j++){
-        if(posts[i].user===users[j].id){
-          console.log(users[j])
-
-          const modalLi= document.createElement('li')
-          modalLi.classList.add('liModalPost')
-
-          const modalImagemNomeJob = document.createElement('div')
-          modalImagemNomeJob.classList.add('modalDivFotoSeparadaNomeEProfissao')
-
-          const modalImgId= document.createElement('img')
-          modalImgId.src=users[j].img
-          modalImgId.classList.add('modalImgPhotos')
-
-          const modalNomeJob=document.createElement('div')
-          modalNomeJob.classList.add('modalNomeProfissao')
-
-          const modalh2 = document.createElement('h2')
-          modalh2.innerHTML= users[j].user
-
-          const modalPJob= document.createElement('p')
-          pJob.innerHTML= users[j].stack
-
-          const modalPTituloOldPost= document.createElement('p')
-          modalPTituloOldPost.classList.add('modalTituloOldPost')
-          modalPTituloOldPost.innerText=posts[i].title
-
-          const modalPDescricaoOldPost= document.createElement('p')
-          modalPDescricaoOldPost.classList.add('modalPDescricaoOldPost')
-          modalPDescricaoOldPost.innerText=posts[i].text
-
-          const closeBtn = document.createElement('span')
-          closeBtn.innerText='X'
-
-        
-
-          modalLi.append(modalImagemNomeJob,modalImgId,modalNomeJob,modalh2,modalPJob,modalPTituloOldPost,modalPDescricaoOldPost,closeBtn)
-        
-          modalQuerySelectorDoElementoQueVouColocar.appendChild(divLi)
-
-        }
-      }
-
-
-    }
-
- }

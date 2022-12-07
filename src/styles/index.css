@@ -4,17 +4,18 @@ main{
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
+    padding-top: 80px;
 }
 .usuarioPerfil{
     max-width: 385px;
     width: 100%;
     /* height: 52px; */
-    margin-left: 20px;
-    margin-top: 20px;
+  
+   
     align-items: center;
     flex-direction: row;
     display: flex;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 
 }
 .imgPhotos{
@@ -43,8 +44,8 @@ main{
     gap: 10px;
     width: 69px;
     height: 38px;
-    background: #DEE2E6;
-    border: 2px solid #DEE2E6;
+    background: var(--color-botaoPostar);
+    border: 2px solid var(--color-botaoPostar);
     border-radius: 4px;
     cursor: pointer;
 }
@@ -65,7 +66,7 @@ main{
     font-weight: 700;
     font-size: 28px;
     line-height: 40px;
-    color: #212529;
+    color: var(--color-primary);
     margin-left: 20px;
     
    
@@ -76,8 +77,8 @@ main{
     align-items: flex-start;
     padding: 0px;
     gap: 20px;
-    width: 190px; 
-     margin-right: 61px; 
+    width: 400px; 
+  
 }
 .ulSugestoes{
     margin-left: 20px;
@@ -87,10 +88,12 @@ main{
     padding: 0px;
     max-width: 738px;
     width: 100%;
-    height: 100px;
+    height: fit-content;
     overflow: auto;
 
 }
+
+
 .botaoSeguir{
     box-sizing: border-box;
     display: flex;
@@ -101,15 +104,15 @@ main{
     gap: 10px;
     width: 89px;
     height: 28px;
-    background: #4263EB;
-    border: 1px solid #4263EB;
+    background: var(--color-botaoSeguir);
+    border: 1px solid var(--color-botaoSeguir);
     border-radius: 2px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    color: #FFFFFF;
+    color: var(--color-secundaria);
     cursor: pointer;
     }
 
@@ -121,4 +124,8 @@ main{
   'GRAD' 0,
 
 
+}
+
+.botaoEsquerda{
+    margin-left: 300px;
 }

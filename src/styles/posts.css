@@ -6,8 +6,8 @@
    padding: 16px 20px;
    width: 375px;
    height: 52px;
-   background: #FFFFFF;
-   border: 2px solid #DEE2E6;
+   background: var( --color-secundaria);
+   border: 2px solid var(--color-botaoPostar);
    border-radius: 4px;
    margin-bottom: 22px;
 }
@@ -24,8 +24,8 @@
    right: 0%;
    top: 0%;
    bottom: 0%;
-   background: #FFFFFF;
-   border: 2px solid #DEE2E6;
+   background: var( --color-secundaria);
+   border: 2px solid var(--color-botaoPostar);
    border-radius: 4px;
    margin-bottom: 22px;
 }
@@ -49,7 +49,7 @@ input{
    font-weight: 700;
    font-size: 28px;
    line-height: 40px;
-   color: #212529;
+   color: var(--color-primary);
 
    margin-right: 20px;
    margin-bottom: 20px;
@@ -62,8 +62,7 @@ input{
    font-weight: 400;
    font-size: 16px;
    line-height: 28px;
-   color: #495057;
-  
+   color: var( --color-terciaria);
    margin-right: 20px;
    margin-bottom: 32px;
    border-style: none;
@@ -79,11 +78,11 @@ input{
    align-items: center;
    padding: 0px 12px;
    gap: 10px;
-   color: #FFFFFF;
+   color:var(--color-secundaria);
    width: 92px;
    height: 38px;
-   background: #212529;
-   border: 2px solid #212529;
+   background: var( --color-primary);
+   border: 2px solid var( --color-primary);
    border-radius: 4px;
    cursor:pointer;
 
@@ -106,17 +105,86 @@ input{
    font-weight: 400;
    font-size: 14px;
    line-height: 16px;
-   color: #495057;
+   color: var(--color-terciaria)
 }
 .imagemNomeProfissao{
    justify-content: space-between;
-  
    width: 100%;
    align-items: center;
-   flex-direction: row;
+   flex-direction: column;
    display: flex;
    margin-bottom: 40px;
-   margin-left: 154px;
+  
    
  
 }
+.divContemBotaoIcone{
+   display: flex;
+   gap:10px;
+   align-items: center;
+   margin-top: 32px;
+}
+.pSugestoesSeguir{
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   color: var(--color-primary);
+   width: 269px;
+   height: 24px;
+   order: 0;
+   flex-grow: 0;
+   
+}
+
+@media(min-width: 700px){
+
+   .digitarTituloPost{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-end;
+       padding: 0px;
+       gap: 22px;
+      
+   }
+   .sectionOldPost{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 0px;
+       gap: 52px;
+       width: 713px;
+       height: 1126px;
+       left: 100px;
+       top: 540px;
+   }
+
+   .sugestoesParaVoceSeguir{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       /* align-items: flex-start; */
+       padding: 0px;
+       position: sticky;
+       top: 100px;
+       z-index: 2;
+       
+   } 
+   main{
+       flex-direction: row;
+       flex-wrap: wrap;
+   }
+   .ulSugestoes{
+       flex-direction: column;
+
+       overflow: unset;
+
+   }
+   .imagemNomeProfissao{
+       flex-direction: row;
+   }
+   
+
+} 
+

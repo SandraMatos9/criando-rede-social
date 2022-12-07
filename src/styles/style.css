@@ -27,48 +27,8 @@ h2{
     margin-bottom: 40px;
 
 }
-
- @media(min-width: 700px){
-
-    .digitarTituloPost{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 0px;
-        gap: 22px;
-       
-    }
-    .sectionOldPost{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 52px;
-        width: 713px;
-        height: 1126px;
-        left: 100px;
-        top: 540px;
-    }
-
-    .sugestoesParaVoceSeguir{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between
-        /* align-items: flex-start; */
-        padding: 0px;
-        position: sticky;
-        top: 0;
-        
-    } 
-    main{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .ulSugestoes{
-        flex-direction: column;
-        overflow: unset;
-
-    }
-    
-
-} 
+.divContemTres{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}

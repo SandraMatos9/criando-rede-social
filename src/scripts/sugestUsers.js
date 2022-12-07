@@ -12,6 +12,9 @@ for(let i=0; i<users.length;i++){
 
       
       const divLi= document.createElement('li')
+      const pSugestoesParaSeguir=document.createElement('p')
+      pSugestoesParaSeguir.innerText='Sugestões para você seguir'
+      pSugestoesParaSeguir.classList= 'pSugestoesParaSeguir'
 
       const divImagemNomeTrabalho = document.createElement('div')
 
@@ -32,10 +35,15 @@ for(let i=0; i<users.length;i++){
       divQualProfissao.innerText=users[i].stack
 
       divNomeTrabalho.append(divTituloNome,divQualProfissao)
-      
-      divImagemNomeTrabalho.append(divImgId2,divNomeTrabalho,divDoBotaoSeguir)
+      const divContemTres= document.createElement('div')
+      divContemTres.append(divImgId2,divNomeTrabalho)
+      divContemTres.classList='divContemTres'
+      divImagemNomeTrabalho.append(divContemTres, divDoBotaoSeguir)
       divLi.appendChild(divImagemNomeTrabalho)
+      
       querySelectorDoElementoQueVouColocar2.appendChild(divLi)
+
+      
      
     }
   }
