@@ -184,6 +184,9 @@ input{
    .imagemNomeProfissao{
        flex-direction: row;
    }
+   .liModalPost{
+      width: 80%;
+   }
    
 
 } 

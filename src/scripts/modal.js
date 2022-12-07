@@ -62,7 +62,7 @@ function modalCreatePosts(x){
             modalPDescricaoOldPost.classList.add('modalPDescricaoOldPost')
             modalPDescricaoOldPost.innerText=x.text
   
-            const closeBtn = document.createElement('span')
+            const closeBtn = document.createElement('button')
             closeBtn.classList='closeBtn'
             closeBtn.innerText='X'
             closeBtn.addEventListener('click',() => divModalContainer.remove())

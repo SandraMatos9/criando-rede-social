@@ -19,7 +19,7 @@
     padding: 40px 24px;
     gap: 32px;
     isolation: isolate;
-    width: 761px;
+    width: 100%;
     height: 544px;
     background: var(--color-secundaria);
     border-radius: 8px;
@@ -28,7 +28,7 @@
 .modalDivFotoSeparadaNomeEProfissao{
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    gap:12px;
    
     
 
@@ -64,5 +64,7 @@
 }
         
 .closeBtn{
-    margin-left: 700px;
+    display: flex;
+    justify-content:end;
+    margin-left: 1400px;
 }
